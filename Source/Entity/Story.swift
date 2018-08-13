@@ -12,7 +12,7 @@ open class Story {
     var image: UIImage
     var title = ""
     var color = UIColor.lightGray
-    var borderWidth: CGFloat = 4
+    var borderWidth: CGFloat = 2
     
     public init(image: UIImage, title: String = "", color: UIColor = UIColor.lightGray, borderWidth: CGFloat = 2) {
         self.image = image

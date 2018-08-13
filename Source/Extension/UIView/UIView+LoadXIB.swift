@@ -8,7 +8,6 @@
 
 import UIKit
 
-// xibを使用してCustomViewを作成した時に、イニシャライズの時にこのメソッドを使用してxibを読み込む
 extension UIView {
     
     func loadXib() {
