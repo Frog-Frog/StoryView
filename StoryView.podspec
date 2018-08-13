@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://github.com/PKPK-Carnage"
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/PKPK-Carnage/StoryView.git", :tag => "#{s.version}" }
-  s.source_files  = "Classes", "Source/*"
+  s.source_files  = "Source/**/*","Sorce/**/**/*"
   s.requires_arc = true
+  s.swift_version = "4.1" 
 
 end
