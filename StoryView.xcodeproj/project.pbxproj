@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0404C6C72121C80C00231A4E /* StoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0404C6C62121C80C00231A4E /* StoryView.xib */; };
 		040F0CCC20DE817B00D733C1 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F0CCB20DE817B00D733C1 /* Story.swift */; };
 		0430F6A6209A99B70085F416 /* StoryView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0430F6A4209A99B70085F416 /* StoryView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0430F6B1209A9A110085F416 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430F6B0209A9A110085F416 /* StoryView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0404C6C62121C80C00231A4E /* StoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoryView.xib; sourceTree = "<group>"; };
 		040F0CCB20DE817B00D733C1 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		0430F6A1209A99B70085F416 /* StoryView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StoryView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0430F6A4209A99B70085F416 /* StoryView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryView.h; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				0430F6B0209A9A110085F416 /* StoryView.swift */,
+				0404C6C62121C80C00231A4E /* StoryView.xib */,
 			);
 			path = StoryView;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0404C6C72121C80C00231A4E /* StoryView.xib in Resources */,
 				0430F6B5209A9A320085F416 /* StoryViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

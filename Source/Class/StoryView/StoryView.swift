@@ -37,6 +37,7 @@ open class StoryView: UIView {
     }
     
     private func initialize() {
+        self.loadXib()
         self.setupCollectionView()
     }
 }
