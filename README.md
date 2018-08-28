@@ -22,18 +22,18 @@ import StoryView
 
 class ViewController: UIViewController {
 
-@IBOutlet weak var storyView: StoryView! {
-  willSet {
-    newValue.delegate = self
-    newValue.dataSource = self
+  @IBOutlet weak var storyView: StoryView! {
+    willSet {
+      newValue.delegate = self
+      newValue.dataSource = self
+    }
   }
-}
 
-override func viewDidLoad() {
-  super.viewDidLoad()
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
-  // If you do not use IBOutlet, create a StoryView with code.
-  //self.storyView = StoryView()
+    // If you do not use IBOutlet, create a StoryView with code.
+    //self.storyView = StoryView()
   }
 }
 ```
