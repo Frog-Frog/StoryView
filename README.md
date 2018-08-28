@@ -23,18 +23,18 @@ import StoryView
 class ViewController: UIViewController {
 
 @IBOutlet weak var storyView: StoryView! {
-willSet {
-newValue.delegate = self
-newValue.dataSource = self
-}
+  willSet {
+    newValue.delegate = self
+    newValue.dataSource = self
+  }
 }
 
 override func viewDidLoad() {
-super.viewDidLoad()
+  super.viewDidLoad()
 
-// If you do not use IBOutlet, create a StoryView with code.
-//self.storyView = StoryView()
-}
+  // If you do not use IBOutlet, create a StoryView with code.
+  //self.storyView = StoryView()
+  }
 }
 ```
 
@@ -44,14 +44,14 @@ You must implement these methods.
 ```swift
 extension ViewController: StoryViewDataSource {
 
-func numberOfItems(in storyView: StoryView) -> Int {
-return yourStories
-}
+  func numberOfItems(in storyView: StoryView) -> Int {
+    return yourStories
+  }
 
-func storyView(_ storyView: StoryView, storyForItem item: Int) -> Story {
-let story = Story(image: yourImage, title: yourTitle)
-return story
-}
+  func storyView(_ storyView: StoryView, storyForItem item: Int) -> Story {
+    let story = Story(image: yourImage, title: yourTitle)
+    return story
+  }
 }
 ```
 
@@ -61,13 +61,13 @@ You must implement these methods.
 ```swift
 extension ViewController: StoryViewDataSource {
 
-func storyView(_ storyView: StoryView, tappedCellAt item: Int) {
-// This process is executed when Story is tapped.
-}
+  func storyView(_ storyView: StoryView, tappedCellAt item: Int) {
+    // This process is executed when Story is tapped.
+  }
 
-func storyView(_ storyView: StoryView, longPressedCellAt item: Int) {
-// This process is executed when Story is long pressed.
-}
+  func storyView(_ storyView: StoryView, longPressedCellAt item: Int) {
+    // This process is executed when Story is long pressed.
+  }
 }
 ```
 
